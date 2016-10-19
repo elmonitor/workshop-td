@@ -161,7 +161,7 @@ class product_pricelist_inherit(models.Model):
                     price_limit = price
                     if rule.price_discount == 0: 
                         rule.price_discount = 1 
-                    price = price / ((rule.price_discount or 1.0))
+                    price = price / (((1-rule.price_discount) or 1.0))
                     if rule.price_round:
                         price = tools.float_round(price, precision_rounding=rule.price_round)
 
