@@ -1,5 +1,6 @@
 from itertools import chain
 import time
+from openerp import models
 
 from openerp import tools
 from openerp.osv import fields, osv
