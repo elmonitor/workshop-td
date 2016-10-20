@@ -11,7 +11,7 @@
     "demo": [
 
     ],
-    "data": ['views/sale_margin_view.xml'
+    "data": ['views/sale_order.xml'
         
     ],
     "test": [],
