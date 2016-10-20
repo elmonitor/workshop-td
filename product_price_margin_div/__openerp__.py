@@ -11,9 +11,7 @@
     "demo": [
 
     ],
-    "data": ['views/sale_order.xml'
-        
-    ],
+    "data": ['views/sale_order.xml'],
     "test": [],
     "js": [],
     "css": [],
