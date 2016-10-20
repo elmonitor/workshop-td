@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openerp>
-    <data>
     <record model="ir.ui.view" id="hide_sale_order_line_form">
         <field name="name">hide.sale.order.view.form</field>
         <field name="model">sale.order</field>
@@ -11,6 +8,5 @@
             </xpath>
         </field>
     </record>
-    </data>
-</openerp>
+
 
