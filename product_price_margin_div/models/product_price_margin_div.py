@@ -12,6 +12,7 @@ import openerp.addons.decimal_precision as dp
 # -*- coding: utf-8 -*-
 class product_pricelist_inherit(models.Model):
     _inherit = 'product.pricelist'
+    
     def _price_rule_get_multi(self, cr, uid, pricelist, products_by_qty_by_partner, context=None):
         context = context or {}
         date = context.get('date') or time.strftime('%Y-%m-%d')
@@ -161,6 +162,7 @@ class product_pricelist_inherit(models.Model):
                     price_limit = price
                     if rule.price_discount == 0: 
                         rule.price_discount = 1 
+                    #price = (purchase_price or 0.0)/((1-disc_line) or 1.0)
                     price = price / (((1-rule.price_discount) or 1.0))
                     if rule.price_round:
                         price = tools.float_round(price, precision_rounding=rule.price_round)
