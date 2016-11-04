@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+      <record model="ir.ui.view" id="sale_form_view_bom_button">
+        <field name="name">sale.order.form</field>
+			  <field name="model">sale.order</field>
+			  <field name="inherit_id" ref="sale.view_order_form"/>
+			  <field name="arch" type="xml">
+          <xpath expr="//page[@string='Order Lines']" position="after">
+              <page string="Bom Lines">
+                     <group string="Lista de materiales">
+                        <field name='bom_id' />
+                        <button name="import_bom" string="Importar" type="object" class="oe_left"/>                            
+                      </group>
+              </page>
+	      	</xpath>
+		    </field>
+	    </record>
+	</data>
+</openerp>
+
