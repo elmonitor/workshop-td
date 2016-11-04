@@ -8,7 +8,7 @@
 	      			<field name="project_id" position="after">
 					<div name="vat_info">
 		       	            	<field name="bom_id"/>
-	       	       		<button name="sale_import_bom" string="(Importar)" type="object" class="oe_highlight"/>
+	       	       		<button name="import_bom" string="(Importar)" type="object" class="oe_highlight"/>
 			              </div>
 		       	</field>
 	       	</field>
