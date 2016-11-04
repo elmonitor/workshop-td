@@ -10,7 +10,7 @@
             		<page name="bom_lines" string="Bom Lines">
 						<group>
                    			<field name='bom_id' />
-                       		<button name="import_bom" string="Importar" type="object" class="oe_left"/>                            
+                       		<button name="import_bom" string="Importar" type="object" class="oe_left"/>
 						</group>
             		</page>
 	      		</xpath>
