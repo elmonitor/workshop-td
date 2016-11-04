@@ -6,13 +6,13 @@
 			<field name="model">sale.order</field>
 			<field name="inherit_id" ref="sale.view_order_form"/>
 			<field name="arch" type="xml">
-          		<xpath expr="//page[@string='Order Lines']" position="after">
-              		<page name="bom_lines" string="Bom Lines">
-				<group>
-                    			<field name='bom_id' />
-                        		<button name="import_bom" string="Importar" type="object" class="oe_left"/>                            
-				</group>
-              		</page>
+          		<xpath expr="//page[@string='Other Information']" position="after">
+            		<page name="bom_lines" string="Bom Lines">
+						<group>
+                   			<field name='bom_id' />
+                       		<button name="import_bom" string="Importar" type="object" class="oe_left"/>                            
+						</group>
+            		</page>
 	      		</xpath>
 		    </field>
 		</record>
