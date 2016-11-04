@@ -11,7 +11,7 @@ This module fills the sales order with bom
     'website': 'http://www.3nodus.com',
     'depends': ['mrp','sale'],
     'data': [
-        'views/sale_import_bom_view.xml',
+        'views/sale_order_view.xml',
     ],
     'demo': [],
     'installable': True,
