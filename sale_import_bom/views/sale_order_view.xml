@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
 	<data>
-    	<record model="ir.ui.view" id="sale_form_view_bom_button">
-        	<field name="name">sale.order.form</field>
+    	<record model="ir.ui.view" id="sale_bom_form_view">
+        	<field name="name">sale.bom.form.view</field>
 			<field name="model">sale.order</field>
 			<field name="inherit_id" ref="sale.view_order_form"/>
 			<field name="arch" type="xml">
-          		<xpath expr="//page[@string='Other Information']" position="after">
+          		<page string="Other Information" groups="base.group_user" position="after">
             		<page name="bom_lines" string="Bom Lines">
-						<group>
-                   			<field name='bom_id' />
-                       		<button name="import_bom" string="Importar" type="object" class="oe_left"/>
+									<group>
+                  		<field name='bom_id' />
+                   		<button name="import_bom" string="Importar" type="object" class="oe_left"/>
 						</group>
             		</page>
-	      		</xpath>
+				</page>
 		    </field>
 		</record>
 	</data>
